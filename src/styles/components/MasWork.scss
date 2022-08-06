@@ -1,0 +1,54 @@
+.work {
+  .my-work {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    @include breakpoint($md) {
+      padding-bottom: 6rem;
+    }
+    &.masonry {
+      .tabs {
+        @include breakpoint($md) {
+          padding: 0 10rem 5rem;
+        }
+
+        li {
+          border-bottom: 1px solid transparent;
+          @include breakpoint($md) {
+            border-radius: 0;
+          }
+          &.active {
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+      .tab-content {
+        .btn-row-center {
+          margin-bottom: 65px;
+        }
+      }
+    }
+  }
+}
+.my-wrok-grids {
+  display: none;
+  @include breakpoint($md) {
+    display: flex;
+  }
+  flex-flow: wrap;
+  padding-left: 0;
+  .content.flow {
+    width: calc(100% / 3);
+    padding: 0 1rem;
+    height: 350px;
+    margin-bottom: 2rem;
+    a {
+      border-radius: 0;
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

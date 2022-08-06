@@ -1,0 +1,47 @@
+.parallax-wrapper {
+  background: url(../../img/parallax-bg.png) no-repeat fixed 100%;
+}
+
+.boxs {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding: 13rem 0;
+  @include breakpoint($md) {
+    padding: 20rem 0;
+    flex-flow: row;
+  }
+  .box {
+    padding: 1.4rem;
+    background-color: black;
+    color: #fff;
+    margin: 0 3rem;
+    width: 19rem;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 4.8rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($md) {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 8rem;
+      font-weight: 100;
+      span {
+        font-size: 3rem;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: 100;
+    }
+    &.yellow {
+      background-color: #ffae42;
+    }
+    &.orange {
+      background-color: #e65f32;
+    }
+  }
+}

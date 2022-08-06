@@ -1,0 +1,49 @@
+.about-section {
+  padding-top: 3rem;
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 12rem;
+  flex-flow: wrap;
+  .image-section {
+    @include breakpoint($lg) {
+      max-width: 40rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .textual-block {
+    padding-top: 6rem;
+    text-align: center;
+    @include breakpoint($lg) {
+      max-width: calc(100% - 40rem);
+      padding-left: 9rem;
+      text-align: left;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      // font-weight: 600;
+      line-height: 2;
+    }
+    .btn-row {
+      padding-top: 3rem;
+      .btn {
+        margin-right: 2.4rem;
+        &:last-child {
+          margin-right: 0;
+          @include breakpoint($lg) {
+            margin-right: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-row {
+  .btn {
+    margin-right: 2.4rem;
+  }
+}

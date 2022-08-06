@@ -1,0 +1,239 @@
+.masonry {
+  .tabs {
+    overflow: auto;
+    padding-bottom: 3rem;
+    .tab-ul {
+      @include breakpoint($md) {
+        justify-content: space-between;
+      }
+    }
+    li {
+      cursor: pointer;
+      padding: 0.5rem 4rem;
+      color: #fff;
+      @include breakpoint($md) {
+        color: #000;
+      }
+      &.active {
+        background-color: #fff;
+        color: #000;
+        border-radius: 18px;
+      }
+    }
+  }
+  .tab-content {
+    padding-top: 3rem;
+    .btn-row-center {
+      margin-bottom: 7rem;
+      margin-top: 5rem;
+      @include breakpoint($md) {
+        margin-top: 7rem;
+        margin-bottom: 33rem;
+      }
+    }
+  }
+}
+
+.my-work {
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+  background: #000;
+  color: #fff;
+  @include breakpoint($md) {
+    color: #000;
+    background: transparent;
+    padding-top: 0;
+  }
+}
+
+.masonry-container {
+  background-color: #000;
+  @include breakpoint($md) {
+    background: transparent;
+  }
+}
+
+.photo-list {
+  width: 90%;
+  list-style: none;
+  margin: 20px auto;
+}
+
+.photo-item {
+  display: flex;
+  width: 300px;
+  margin: 20px 0;
+}
+.photo-item img {
+  display: flex;
+  width: 100%;
+}
+
+.grid {
+  --gap: 20px;
+  --columns: 4;
+  max-width: 100%;
+  margin: 0 auto;
+  columns: var(--columns);
+  gap: var(--gap);
+}
+.grid.deskTab {
+  display: none;
+  @include breakpoint($md) {
+    display: block;
+  }
+}
+
+.grid > * {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+}
+
+.btn-row-center {
+  display: flex;
+  justify-content: center;
+}
+
+@supports (grid-template-rows: masonry) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: masonry;
+    grid-auto-flow: dense;
+    /* align-tracks: stretch; */
+  }
+
+  .grid > * {
+    margin-bottom: 0em;
+  }
+}
+
+.featured {
+  grid-column: span 2;
+}
+
+:root {
+  --ff-primary: basic-sans, sans-serif;
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-bg: #ddd;
+  --spacer: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  @include breakpoint($md) {
+    background: white;
+  }
+  a {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      .overlay {
+        top: 0;
+      }
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      padding: 2.8rem;
+      display: flex;
+      align-items: center;
+      top: 0;
+      transition: all 0.3s;
+      background-color: rgba(0, 0, 0, 0.7);
+      @include breakpoint($md) {
+        background-color: rgba(81, 142, 154, 0.9);
+        top: 100%;
+      }
+      h3 {
+        font-size: 3.5rem;
+        color: #fff;
+        font-weight: bold;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+      }
+      span {
+        position: absolute;
+        font-family: "sf_display";
+        color: #fff;
+        font-size: 1rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        @include breakpoint($md) {
+          right: 1.5rem;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: 0.8;
+}
+
+.mobileSlider {
+  @include breakpoint($md) {
+    display: none;
+  }
+}
+.slick-slide {
+  a {
+    height: 400px;
+    margin-right: 1.6rem;
+    border-radius: 15px;
+    margin-right: 16px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding-right: 16px;
+  }
+}
+
+.grid + .btn-row-center,
+.my-wrok-grids + .btn-row-center {
+  .btn {
+    border: 1px solid #fff;
+    color: #fff;
+    @include breakpoint($md) {
+      border: 1px solid #000;
+      color: #000;
+    }
+  }
+}

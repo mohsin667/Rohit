@@ -1,0 +1,14 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1300px;
+
+$sf: "sf_display";
+
+@mixin breakpoint($bp: 0) {
+  @media screen and (min-width: #{$bp}) {
+    @content;
+  }
+}

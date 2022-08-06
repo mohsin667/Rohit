@@ -1,0 +1,43 @@
+.journey {
+  .line-heading {
+    span {
+      color: #ff7340;
+    }
+  }
+}
+
+.grey-container {
+  background-color: #fafafa;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 12rem;
+  padding: 3rem 2rem 0;
+  @include breakpoint($md) {
+    padding: 3rem 3rem 0;
+  }
+  .journies {
+    margin-bottom: 1rem;
+    width: 100%;
+    &.d-n {
+      display: none;
+      @include breakpoint($md) {
+        display: block;
+      }
+    }
+    @include breakpoint($md) {
+      width: 50%;
+      margin-bottom: 3rem;
+    }
+    .journey-heading {
+      color: #e65f32;
+      &.edu {
+        color: #ac5598;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      color: #323232;
+    }
+  }
+}

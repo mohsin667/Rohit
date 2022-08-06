@@ -1,0 +1,80 @@
+.photograpy-container,
+.urbanguy-container,
+.designpull-container {
+  background-color: #e65f32;
+  padding: 6rem 0 8.5rem;
+  color: #fff;
+  line-height: normal;
+
+  .container {
+    position: relative;
+  }
+  .text-body-column {
+    color: #fff;
+    max-width: 60rem;
+    padding-top: 7rem;
+    @include breakpoint($md) {
+      padding-top: 0;
+    }
+  }
+  .name {
+    font-size: 2.4rem;
+    font-weight: 100;
+    @include breakpoint($md) {
+      font-size: 3.3rem;
+    }
+  }
+  .des {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+    @include breakpoint($md) {
+      font-size: 7.5rem;
+    }
+  }
+  .desc {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}
+.photograpy-container {
+  margin-top: 37rem;
+  @include breakpoint($md) {
+    margin-top: 0;
+  }
+}
+
+.urbanguy-container,
+.designpull-container {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  @include breakpoint($md) {
+    height: auto;
+    align-items: flex-start;
+  }
+}
+
+.nm {
+  margin-bottom: 0 !important;
+}
+
+.frame {
+  position: absolute;
+  top: calc(-50% - 16rem);
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 29.9rem;
+  @include breakpoint($md) {
+    left: auto;
+    transform: initial;
+    max-width: 100%;
+  }
+}
+.urbanguy-container {
+  background-color: #000;
+}
+.designpull-container {
+  background-color: #ffae42;
+}

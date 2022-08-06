@@ -1,0 +1,52 @@
+@import "../base/buttons.scss";
+.App {
+  position: relative;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.row > * {
+  max-width: auto;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+// .cursor {
+//   width: 3rem;
+//   height: 3rem;
+//   position: fixed;
+//   z-index: 9;
+//   border-radius: 100%;
+//   transform: translate(-50%, -50%);
+//   transform-origin: 100% 100%;
+//   pointer-events: none;
+//   transition: all 0.1s ease;
+//   transition-property: background, transform, width, height;
+//   will-change: transform;
+//   background-color: #000;
+//   &.linkGrow {
+//     transform: scale(1.8);
+//     background-color: #e65f32;
+//   }
+// }
