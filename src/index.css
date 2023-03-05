@@ -77,15 +77,22 @@
   font-style: italic;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
-  font-family: "aeonik";
   font-weight: 400;
   line-height: 1.8;
   font-size: 1.4rem;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-family: "aeonik";
 }
 
 h1 {
+  font-weight: 700;
   font-family: "sf_display";
   font-weight: 700;
 }

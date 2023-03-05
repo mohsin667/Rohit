@@ -3,7 +3,7 @@ import LinkedIn from "../img/icons/linked-in.png";
 import Facebook from "../img/icons/facebook.png";
 import Instagram from "../img/icons/instagram.png";
 import Youtube from "../img/icons/youtube.png";
-
+import {IoLogoBehance} from "react-icons/io5"
 function Footer() {
   return (
     <footer>
@@ -14,7 +14,7 @@ function Footer() {
           </h2>
 
           <div className="cta-section">
-            <p>I’m ella adams, am a photographer with 5 years of experience. I am known to capture the most important moments in every.</p>
+            <p>If you'd like to get in touch for Opportunities or <br />just to say hi!, feel free to reach out.</p>
             <a href="#" download className="btn white">
               Download CV
             </a>
@@ -27,6 +27,9 @@ function Footer() {
             Rohit Kataria
           </div>
           <div className="socialLinks">
+            <a href="#">
+              <IoLogoBehance size={33} color="#fff"/>
+            </a>
             <a href="#">
               <img src={LinkedIn} alt="linked in" />
             </a>
@@ -48,12 +51,15 @@ function Footer() {
         </div>
         <div className="contact-bar">
           <div className="contacts">
-            <p>Contact</p>
+            <p>Get In Touch</p>
             <div className="action-links">
-              Mail :<a href="mailto:rohitkataria.info@gmail.com">Rohitkataria.info@gmail.com</a>
+              Mail: <a href="mailto:rohitkataria.info@gmail.com">Rohitkataria.info@gmail.com</a>
             </div>
             <div className="action-links">
-              Phone : <a href="tel:+919971823440">+919971823440</a>, <a href="tel:+918076633269">+918076633269</a>
+              For freelance projects: <a href="tel:+919971823440">+919971823440</a>, <a href="tel:+918076633269">+918076633269</a>
+            </div>
+            <div className="action-links">
+              Phone: <a href="tel:+919971823440">+919971823440</a>, <a href="tel:+918076633269">+918076633269</a>
             </div>
           </div>
           <div className="links"></div>

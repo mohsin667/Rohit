@@ -16,22 +16,22 @@ function Mason() {
     {
       obj1: [
         {
-          imageUrl: "3"
-        },
-        {
           imageUrl: "1"
-        },
-        {
-          imageUrl: "5"
         },
         {
           imageUrl: "2"
         },
         {
-          imageUrl: "8"
+          imageUrl: "3"
         },
         {
           imageUrl: "4"
+        },
+        {
+          imageUrl: "5"
+        },
+        {
+          imageUrl: "6"
         },
         {
           imageUrl: "7"
@@ -200,6 +200,7 @@ function Mason() {
 
             <ul className="grid deskTab">
               {photo[active].obj1.map((photo, index) => (
+                
                 <li key={index} className="content flow">
                   <a href="#">
                     <img src={require(`../img/tabs/tab-${1}-${photo.imageUrl}.png`)} />

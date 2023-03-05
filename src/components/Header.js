@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../img/logo.png";
+import Logo from "../img/logo.svg";
 import { GrMenu } from "react-icons/gr";
 import { CgClose } from "react-icons/cg";
 import { Link } from "react-router-dom";

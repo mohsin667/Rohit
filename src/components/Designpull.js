@@ -5,9 +5,10 @@ function Designpull() {
     <div className="designpull-container">
       <div className="container">
         <div className="text-body-column">
-          <div className="des">Urbanguy</div>
+          <div className="des">Designpull</div>
           <div className="desc">
-            <p>I’m ella adams, am a photographer with 5 years of experience. I am known to capture the most important moments in every events as i am a professonal at producing premium quality photos in studio settings. </p>
+            <p>Designpull was founded in 2019 with an aim of providing design solutions geared toward business success. It offers design services like Branding, Graphic design, Print design and 
+UI/UX design solutions.</p>
           </div>
           <a href="#" className="btn white wide">
             Visit Website

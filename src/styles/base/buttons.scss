@@ -3,10 +3,18 @@
   border: 1px solid #000;
   border-radius: 0;
   padding: 1.2rem 2.5rem;
+  transition: all 0.5s ease;
+  
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  
   &.white {
     border: 1px solid #fff;
     color: #fff;
   }
+  
   &.wide {
     min-width: 20rem;
   }

@@ -14,17 +14,17 @@ function Parallaxcomponent() {
           </div>
           <div className="box">
             <h3>
-              03<span>yrs</span>
+              24<span>+</span>
             </h3>
-            <h4>Total</h4>
-            <h4>Experience</h4>
+            <h4>Projects</h4>
+            <h4>Done</h4>
           </div>
           <div className="box yellow">
             <h3>
-              03<span>yrs</span>
+              20<span>+</span>
             </h3>
-            <h4>Total</h4>
-            <h4>Experience</h4>
+            <h4>Clients</h4>
+            <h4>Worldwide</h4>
           </div>
         </div>
       </div>
