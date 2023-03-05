@@ -1,5 +1,5 @@
 import React from "react";
-
+import Case from "../img/case.jpg"
 function caseStudy() {
   return (
     <div className="case-study">
@@ -11,6 +11,7 @@ function caseStudy() {
             <a href="#" className="btn white">
               View Case Study
             </a>
+            <img src={Case} alt="case" />
           </div>
         </div>
       </div>

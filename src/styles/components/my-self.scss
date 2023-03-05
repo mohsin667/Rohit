@@ -1,8 +1,8 @@
 .my-self {
   background: url(../../img/my-self-bg.png) no-repeat;
   background-size: cover;
-  margin-bottom: 12rem;
   padding: 8.5rem 0;
+  background-attachment: fixed;
   @include breakpoint($md) {
     padding: 13.2rem 0;
     background-position: center;

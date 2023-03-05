@@ -12,11 +12,11 @@ function MySelf() {
             <div className="image-wrapper">
               <div className="image-card">
                 Love Music
-                <img src={Headphone} alt="" srcset="" />
+                <img src={Headphone} alt="" />
               </div>
               <div className="image-card">
                 Photograph
-                <img src={Camera} alt="" srcset="" />
+                <img src={Camera} alt="" />
               </div>
             </div>
           </div>

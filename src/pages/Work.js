@@ -9,10 +9,11 @@ import CaseStudy from "../components/CaseStudy";
 import MasWoak from "../components/MasWoak.js";
 
 function Work() {
+  const subtitle = ["Product Designer", "Visual Designer", "Photographer"]
   return (
     <div className="work">
       <div className="work-banner">
-        <Banner banner="work" />
+        <Banner banner="work" subtitle={subtitle}/>
       </div>
       <MasWoak />
     </div>

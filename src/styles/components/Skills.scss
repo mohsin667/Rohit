@@ -37,17 +37,23 @@
   .card-heading {
     margin-bottom: 1.8rem;
     color: #ac5598;
-    font-weight: 600;
+    font-weight: bold;
   }
 
   .card-wrapper {
     &.first {
       width: 100%;
       @include breakpoint($md) {
-        width: 203px;
+        width: calc(100% / 3 - 18px);
+        display: flex;
+        flex-flow: column;
       }
       .tools-card {
         height: 264px;
+        @include breakpoint($md) {
+          height: calc(100% / 2 - 10px);
+          width: 100%;
+        }
         &:last-child {
           margin-top: 1.8rem;
         }
@@ -61,7 +67,7 @@
       margin-top: 1.8rem;
       @include breakpoint($md) {
         margin-top: 0;
-        width: calc(100% - (203px + 18px));
+        width: calc(100% - (100% / 3));
       }
       h2 {
         color: #e7557c;
@@ -91,9 +97,16 @@
     flex-flow: wrap;
     .card-item {
       color: #785971;
-      font-weight: 600;
+      font-weight: 400;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 3px;
     }
     .card-item-perc {
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
       color: rgba(33, 33, 33, 0.5);
     }
   }
@@ -121,8 +134,12 @@
   flex-flow: column;
   width: 100%;
   @include breakpoint($md) {
+    max-width: 645px;
     width: calc(100% - (320px + 62px));
     flex-flow: row;
+  }
+  @include breakpoint($extra-large) {
+    max-width: 100%;
   }
 }
 
@@ -134,14 +151,14 @@
     width: 100%;
     margin-bottom: 1.8rem;
     @include breakpoint($md) {
-      width: calc(50% - 8px);
+      width: calc(50% - 9px);
       margin-bottom: 0;
     }
     .card-heading {
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.4rem;
     }
     .card-item-bold {
-      font-size: 5rem;
+      font-size: 4.5rem;
       color: #785971;
       line-height: 1;
       span {
@@ -152,6 +169,7 @@
     &.column {
       .card-row {
         flex-flow: column;
+        margin-bottom: 1rem;
       }
     }
     .card-row {
@@ -164,22 +182,26 @@
 }
 
 .full-width-card {
-  background-color: #9a7398;
+  background-color: #935D90;
   color: #fff;
   border-radius: 10px;
   width: 100%;
   padding: 2rem;
   @include breakpoint($md) {
-    padding: 2rem 17rem 2rem 3rem;
+    padding: 2rem 6rem 2rem 3rem;
     margin-top: 1.8rem;
+  }
+  @include breakpoint($extra-large) {
+    padding: 2rem 10rem 2rem 3rem;
   }
   h3 {
     color: #fff;
     font-family: $sf;
     font-weight: 500;
     font-size: 3rem;
+    margin-bottom: 0;
     @include breakpoint($md) {
-      font-size: 6rem;
+      font-size: 3.57em
     }
   }
 }

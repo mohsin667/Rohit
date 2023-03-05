@@ -9,7 +9,7 @@
     &.masonry {
       .tabs {
         @include breakpoint($md) {
-          padding: 0 10rem 5rem;
+          padding: 60px 10rem 5rem;
         }
 
         li {

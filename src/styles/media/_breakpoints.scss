@@ -4,7 +4,7 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1300px;
-
+$extra-large: 1440px;
 $sf: "sf_display";
 
 @mixin breakpoint($bp: 0) {

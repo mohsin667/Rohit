@@ -62,6 +62,9 @@
 }
 .about-banner {
   margin-bottom: 10rem;
+  h1 {
+    color: #000 !important;
+  }
   @include breakpoint($lg) {
     margin-bottom: 12rem;
   }

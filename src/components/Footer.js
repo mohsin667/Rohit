@@ -4,6 +4,7 @@ import Facebook from "../img/icons/facebook.png";
 import Instagram from "../img/icons/instagram.png";
 import Youtube from "../img/icons/youtube.png";
 import {IoLogoBehance} from "react-icons/io5"
+
 function Footer() {
   return (
     <footer>

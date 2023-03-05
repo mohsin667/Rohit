@@ -8,14 +8,11 @@ import Skills from "../components/Skills";
 import CaseStudy from "../components/CaseStudy";
 
 function Terms() {
-  const obj = {
-    a: "a",
-    b: "b"
-  };
+  const subtitle = ["My Journey", "My Skills", "My Values"]
   return (
     <div className="about">
       <div className="about-banner">
-        <Banner banner="about" />
+        <Banner banner="about" subtitle={subtitle}/>
       </div>
       <ProfileSummary />
       <Journey />

@@ -16,7 +16,7 @@ function Mason() {
     {
       obj1: [
         {
-          imageUrl: "1"
+          imageUrl: "1",
         },
         {
           imageUrl: "2"

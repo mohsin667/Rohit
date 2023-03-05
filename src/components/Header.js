@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Logo from "../img/logo.svg";
 import { GrMenu } from "react-icons/gr";
 import { CgClose } from "react-icons/cg";
@@ -11,12 +11,15 @@ function Header(props) {
   const [aboutLink, setAboutLink] = useState(false);
   const [workLink, setWorkLink] = useState(false);
   const [contactLink, setContactLink] = useState(false);
-  const handleMouseOver = () => {
-    props.setLinkGrow(true);
-  };
-  const handleMouseLeave = () => {
-    props.setLinkGrow(false);
-  };
+  const [pathName, setPathName] = useState(window.location.pathname)
+  const [path,setPath] = useState('')
+  
+  useEffect(()=> {
+    const refactor = pathName.split("/")
+    const newPath = refactor[1]
+    setPath(newPath)
+    console.log("new")
+  },[])
   return (
     <div className="header">
       <div className="container">
@@ -28,13 +31,13 @@ function Header(props) {
           </div>
           <div className={menu ? "navbar open" : "navbar close"}>
             <ul>
-              <li onMouseOver={() => (handleMouseOver(), setHomeLink(true))} onMouseLeave={() => (handleMouseLeave(), setHomeLink(false))} className={`${homeLink ? "hovered-link" : ""} active`}>
+              <li className={`${path == undefined ? "active" : ""}`}>
                 <Link to="/">Home</Link>
               </li>
-              <li onMouseOver={() => (handleMouseOver(), setAboutLink(true))} onMouseLeave={() => (handleMouseLeave(), setAboutLink(false))} className={`${aboutLink ? "hovered-link" : ""}`}>
-                <Link to="about">About</Link>
+              <li className={`${path == 'about' ? "active" : ""}`}>
+                <Link to="/about">About</Link>
               </li>
-              <li onMouseOver={() => (handleMouseOver(), setWorkLink(true))} onMouseLeave={() => (handleMouseLeave(), setWorkLink(false))} className={`${workLink ? "hovered-link" : ""}`}>
+              <li className={`${path ==  'work' ? "active" : ""}`}>
                 <Link to="/work">Work</Link>
               </li>
             </ul>

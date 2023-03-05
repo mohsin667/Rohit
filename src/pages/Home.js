@@ -10,9 +10,10 @@ import Parallaxcomponent from "../components/Parallaxcomponent";
 import Promotion from "../components/Promotion";
 
 function Home() {
+  const subtitle = ["Product Designer", "Visual Designer", "Photographer"]
   return (
     <>
-      <Banner banner={"home"} />
+      <Banner banner={"home"} subtitle={subtitle}/>
       <AboutSection />
       <div className="my-work">
         <h2 className="text-center">My work</h2>

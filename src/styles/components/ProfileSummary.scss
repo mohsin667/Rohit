@@ -1,11 +1,11 @@
 .line-name {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
   @include breakpoint($md) {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 h2.line-heading {

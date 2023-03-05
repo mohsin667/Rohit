@@ -8,9 +8,9 @@ function Journey() {
         <h2 className="line-heading">
           <span>Work</span> Experience
         </h2>
-        <div className="grey-container">
+        <div className="grey-container" style={{marginBottom: "50px"}}>
           <div className="journies">
-            <div className="journey-heading">Nov 2021 - Present</div>
+            <div className="journey-heading">Nov 2021 - Aug 2022</div>
             <p>Associate UI/UX Designer - Times Internet</p>
           </div>
           <div className="journies">

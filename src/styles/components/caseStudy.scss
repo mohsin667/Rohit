@@ -1,9 +1,22 @@
 .case-study {
   background-position: center;
-  background: #518e9a;
+  background:#518E9A;
+  position: relative;
   @include breakpoint($md) {
-    background: url(../../img/case.png) no-repeat;
-    padding: 20rem 0;
+    background:#94a3a8;
+    padding: 17.1rem 0;
+  }
+  
+  img {
+    display: none;
+    @include breakpoint($md) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .case-study-container {
@@ -13,9 +26,17 @@
       font-size: 5.5rem;
       font-weight: 100;
       margin-bottom: 1rem;
+      position: relative;
+      z-index: 9;
     }
     p {
       margin-bottom: 2rem;
+      position: relative;
+      z-index: 9;
+    }
+    a {
+      position: relative;
+      z-index: 9;
     }
   }
 }

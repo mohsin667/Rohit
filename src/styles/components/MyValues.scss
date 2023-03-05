@@ -1,16 +1,29 @@
 .my-values {
-  margin-bottom: 12rem;
+  padding: 11.1rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  @include breakpoint($md) {
+    min-height: auto;
+  }
+  .row {
+    align-items: center;
+  }
   h2.line-heading {
     font-family: $sf;
     color: #f5b561;
     font-size: 4.5rem;
     @include breakpoint($md) {
       font-size: 10rem;
+      width: 50%;
     }
     span {
       display: block;
       color: #5f202d;
     }
+  }
+  .row {
+
   }
 }
 .side-para {
