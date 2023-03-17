@@ -7,19 +7,29 @@ import "aos/dist/aos.css";
 
 function Banner(props) {
   const [transition,setTransition] = useState(document.body.scrollTop)
+  const [sY, setSY] = useState(-50)
   const height = useRef(null)
   const { banner } = props;
   const Banner = () => {
-    if (banner == "home") {
+    if (banner === "home") {
       return home;
     }
-    if (banner == "about") {
+    if (banner === "about") {
       return about;
     }
-    if (banner == "work") {
+    if (banner === "work") {
       return work;
     }
   };
+
+  useEffect(() => {
+    if(banner === "home") {
+      window.addEventListener('scroll',function() {
+        console.log(sY)
+        setSY(-50 + window.scrollY)
+      })
+    }
+  },[])
 
   // console.log(height.current.height)
 
@@ -28,7 +38,7 @@ function Banner(props) {
   }, []);
 
   return (
-    <div ref={height} className="banner" style={{backgroundImage: `url(${Banner()})`}}> 
+    <div ref={height} className="banner" style={{backgroundImage: `url(${Banner()})`, backgroundPositionY:`${sY}px`, backgroundAttachment: banner=== "home" ? "scroll" : "fixed"}}> 
       <div className="inner-content container" style={{transform: `translate(-50%, -${transition}%)`}}>
         {banner == "home" && (
           <span data-aos="fade-in" data-aos-duration="1000">
