@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-import Logo from "../img/logo.svg";
 import { GrMenu } from "react-icons/gr";
 import { CgClose } from "react-icons/cg";
 import { Link } from "react-router-dom";
@@ -26,7 +25,7 @@ function Header(props) {
         <nav>
           <div className="logo">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img src="/logo.svg" alt="" />
             </Link>
           </div>
           <div className={menu ? "navbar open" : "navbar close"}>

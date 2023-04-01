@@ -3,14 +3,17 @@
   background: linear-gradient(136deg, #ffeff3, #f9f2ff);
   padding: 8.4rem 0;
   margin-bottom: 12.5rem;
+
   .left-panel {
     width: 100%;
     padding-bottom: 4rem;
+
     @include breakpoint($md) {
       width: 32rem;
       margin-right: 6.2rem;
       padding-bottom: 0;
     }
+
     h2 {
       font-size: 5.5rem;
       margin-bottom: 2.2rem;
@@ -18,8 +21,10 @@
       font-weight: 500;
     }
   }
+
   ul {
     padding: 0;
+
     li {
       color: #785971;
       font-size: 1.6rem;
@@ -31,9 +36,11 @@
 .skills-wrapper {
   display: flex;
   flex-flow: column;
+
   @include breakpoint($md) {
     flex-flow: row;
   }
+
   .card-heading {
     margin-bottom: 1.8rem;
     color: #ac5598;
@@ -43,38 +50,46 @@
   .card-wrapper {
     &.first {
       width: 100%;
+
       @include breakpoint($md) {
         width: calc(100% / 3 - 18px);
         display: flex;
         flex-flow: column;
       }
+
       .tools-card {
         height: 264px;
+
         @include breakpoint($md) {
           height: calc(100% / 2 - 10px);
           width: 100%;
         }
+
         &:last-child {
           margin-top: 1.8rem;
         }
       }
     }
+
     &.second {
       display: flex;
       flex-flow: column;
       justify-content: space-between;
       width: 100%;
       margin-top: 1.8rem;
+
       @include breakpoint($md) {
         margin-top: 0;
         width: calc(100% - (100% / 3));
       }
+
       h2 {
         color: #e7557c;
         font-size: 5.5rem;
         font-family: $sf;
         font-weight: 500;
         display: none;
+
         @include breakpoint($md) {
           display: block;
         }
@@ -82,19 +97,23 @@
     }
   }
 }
+
 .tools-card {
   padding: 1.5rem;
   background-color: #fff;
   border-radius: 1rem;
   width: 100%;
+
   @include breakpoint($md) {
     width: 203px;
   }
+
   .card-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.2rem;
     flex-flow: wrap;
+
     .card-item {
       color: #785971;
       font-weight: 400;
@@ -103,6 +122,7 @@
       align-items: center;
       margin-bottom: 3px;
     }
+
     .card-item-perc {
       height: 18px;
       display: inline-flex;
@@ -110,6 +130,7 @@
       color: rgba(33, 33, 33, 0.5);
     }
   }
+
   .border-line {
     background-color: rgba(151, 151, 151, 0.5);
     position: relative;
@@ -117,6 +138,7 @@
     border-radius: 0.25rem;
     width: 100%;
     overflow: hidden;
+
     .percentage-line {
       background-color: #785971;
       position: absolute;
@@ -133,11 +155,13 @@
   display: flex;
   flex-flow: column;
   width: 100%;
+
   @include breakpoint($md) {
     max-width: 645px;
     width: calc(100% - (320px + 62px));
     flex-flow: row;
   }
+
   @include breakpoint($extra-large) {
     max-width: 100%;
   }
@@ -147,33 +171,41 @@
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
+
   .tools-card {
     width: 100%;
     margin-bottom: 1.8rem;
+
     @include breakpoint($md) {
       width: calc(50% - 9px);
       margin-bottom: 0;
     }
+
     .card-heading {
       margin-bottom: 1.4rem;
     }
+
     .card-item-bold {
       font-size: 4.5rem;
       color: #785971;
       line-height: 1;
+
       span {
         font-size: 3rem;
         font-weight: 100;
       }
     }
+
     &.column {
       .card-row {
         flex-flow: column;
         margin-bottom: 1rem;
       }
     }
+
     .card-row {
       margin-bottom: 1.8rem;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -187,19 +219,19 @@
   border-radius: 10px;
   width: 100%;
   padding: 2rem;
+
   @include breakpoint($md) {
     padding: 2rem 6rem 2rem 3rem;
     margin-top: 1.8rem;
   }
-  @include breakpoint($extra-large) {
-    padding: 2rem 10rem 2rem 3rem;
-  }
+
   h3 {
     color: #fff;
     font-family: $sf;
     font-weight: 500;
     font-size: 3rem;
     margin-bottom: 0;
+
     @include breakpoint($md) {
       font-size: 3.57em
     }
@@ -211,6 +243,7 @@
   color: #e7557c;
   text-align: center;
   margin-bottom: 4rem;
+
   @include breakpoint($md) {
     display: none;
   }

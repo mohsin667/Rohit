@@ -4,6 +4,7 @@ import Facebook from "../img/icons/facebook.png";
 import Instagram from "../img/icons/instagram.png";
 import Youtube from "../img/icons/youtube.png";
 import {IoLogoBehance} from "react-icons/io5"
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
 
           <div className="cta-section">
             <p>If you'd like to get in touch for Opportunities or <br />just to say hi!, feel free to reach out.</p>
-            <a href="#" download className="btn white">
+            <a href="/CV.pdf" download className="btn white">
               Download CV
             </a>
           </div>
@@ -24,8 +25,9 @@ function Footer() {
         <div className="devider"></div>
         <div className="social-bar">
           <div className="logo white">
-            <span>RK</span>
-            Rohit Kataria
+            <Link to="/">
+              <img src="/logo-footer.svg" alt="logo" />
+            </Link>
           </div>
           <div className="socialLinks">
             <a href="#">

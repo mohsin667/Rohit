@@ -2,28 +2,41 @@
   padding: 13rem 0;
   max-width: 1030px;
   text-align: center;
+
   @include breakpoint($md) {
     text-align: left;
   }
+
   &.promotion {
-    max-width: 41rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .anim-section-text {
+      max-width: 41rem;
+    }
   }
+
   h2 {
     font-size: 3.7rem;
     font-family: "sf_display";
     margin-bottom: 3rem;
     font-weight: 500;
     text-align: center;
+
     br {
       display: none;
+
       @include breakpoint($md) {
         display: inline;
       }
     }
+
     @include breakpoint($md) {
       font-size: 5.5rem;
       text-align: left;
     }
+
     span {
       color: #e65f32;
     }
@@ -32,9 +45,11 @@
 
 .eclips-row {
   justify-content: center;
+
   @include breakpoint($md) {
     justify-content: flex-start;
   }
+
   .eclips {
     width: 6.7rem;
     height: 6.7rem;
@@ -44,20 +59,24 @@
     align-items: center;
     justify-content: center;
     margin: 0 2.3rem;
+
     @include breakpoint($md) {
       margin-right: 4.6rem;
     }
+
     .circle {
       width: 2.3rem;
       height: 2.3rem;
       background-color: #000;
       border-radius: 100%;
     }
+
     &.orange {
       .circle {
         background-color: #e65f32;
       }
     }
+
     &.yellow {
       .circle {
         background-color: #ffae42;

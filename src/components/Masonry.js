@@ -152,9 +152,37 @@ function Mason() {
           imageUrl: "8"
         }
       ]
+    },
+    {
+      obj1: [
+        {
+          imageUrl: "6"
+        },
+        {
+          imageUrl: "2"
+        },
+        {
+          imageUrl: "3"
+        },
+        {
+          imageUrl: "4"
+        },
+        {
+          imageUrl: "5"
+        },
+        {
+          imageUrl: "6"
+        },
+        {
+          imageUrl: "7"
+        },
+        {
+          imageUrl: "8"
+        }
+      ]
     }
   ]);
-  const [tabId, setTabId] = useState(["UI/UX", "Graphic", "Photography", "Model", "Travel"]);
+  const [tabId, setTabId] = useState(["All","UI/UX", "Graphic", "Photography", "Model", "Travel"]);
   const habdleTab = index => {
     setActive(index);
     setIsFirstClick(true);

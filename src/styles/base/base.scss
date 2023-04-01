@@ -1,8 +1,10 @@
 @import "../base/buttons.scss";
+
 .App {
   position: relative;
   overflow-x: hidden;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -24,12 +26,15 @@ h2 {
   font-weight: 600;
 }
 
-.row > * {
+.row>* {
   max-width: auto;
 }
 
 .container {
-  padding: 0 1.5rem;
+  padding: 0;
+  width: calc(100% - 30px);
+  max-width: 1030px;
+  margin: 0 auto;
 }
 
 // .cursor {

@@ -25,7 +25,7 @@ function AboutSection() {
               <a href="#" className="btn">
                 Read More
               </a>
-              <a href="#" className="btn">
+              <a href="./CV.pdf" download className="btn">
                 Download CV
               </a>
             </div>

@@ -21,14 +21,16 @@ function Banner(props) {
       return work;
     }
   };
-
+  
+  const homeBanner = ()=> {
+    console.log(sY)
+    setSY(-50 + window.scrollY)
+  }
   useEffect(() => {
     if(banner === "home") {
-      window.addEventListener('scroll',function() {
-        console.log(sY)
-        setSY(-50 + window.scrollY)
-      })
+      window.addEventListener('scroll', homeBanner)
     }
+    return () => window.removeEventListener('scroll', homeBanner)
   },[])
 
   // console.log(height.current.height)

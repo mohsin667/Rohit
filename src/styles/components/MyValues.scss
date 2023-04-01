@@ -3,78 +3,101 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+
+  .line-name {
+    width: 100%;
+  }
+
   @include breakpoint($md) {
     min-height: auto;
   }
+
   .row {
     align-items: center;
+    flex-flow: wrap;
   }
+
   h2.line-heading {
     font-family: $sf;
     color: #f5b561;
     font-size: 4.5rem;
+
     @include breakpoint($md) {
-      font-size: 10rem;
+      font-size: 8rem;
       width: 50%;
     }
+
     span {
       display: block;
       color: #5f202d;
     }
   }
-  .row {
 
-  }
 }
+
 .side-para {
   max-width: 65rem;
   margin-left: auto;
   text-align: center;
   padding: 0 1.5rem;
+
   @include breakpoint($md) {
     text-align: left;
+    width: 50%;
   }
 }
+
 .always-learning {
   background: url(../../img/white-wall.png) no-repeat;
   background-size: cover;
 }
+
 .always-learning {
   @include breakpoint($md) {
     padding: 13.2rem 0;
   }
+
   h2.line-heading {
     font-family: $sf;
     font-size: 3rem;
+
     br {
       display: none;
+
       @include breakpoint($md) {
         display: inline;
       }
     }
+
     @include breakpoint($md) {
-      font-size: 10rem;
+      font-size: 8rem;
     }
+
     span {
       display: block;
     }
   }
+
   .inner-contain {
     display: flex;
     align-items: center;
     flex-flow: column;
     min-height: 100vh;
     justify-content: center;
+
     @include breakpoint($md) {
       justify-content: space-between;
       flex-flow: row;
       min-height: auto;
     }
+
     .para {
       max-width: 65rem;
       text-align: center;
+
       @include breakpoint($md) {
         text-align: left;
+        width: 50%;
       }
     }
   }
